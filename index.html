@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>💪Workout Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- JS files
+    --------------------------------------------------------------------------------------------------->
+    <script src="index.js"></script>
+    <script src='./rsc/fullBody.js'></script>
+    <!-- CSS Files
+    --------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Importing Google Font
+    --------------------------------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Workout Generator</h1>
+    </header>
+
+    <div id="divWorkoutContainer">
+        <div id="divWorkoutSelector">
+            <select id="workoutSplitSelector" name="workoutSplitSelector">
+                <option value="01">Full Body Split</option>
+                <option value="upperLowerSplit">Upper Lower Split</option>
+                <option value="pushPullLegsSplit">Push Pull Legs Split</option>
+            </select>
+            <!--
+            <select id="workoutDaySelector" name="workoutDaySelect">
+                <option value="fullBodyCompoundDay">Full Body Compound Day</option>
+                <option value="fullBodyAccessoryDay">Full Body Accessory Day</option>
+            </select>
+            -->
+        </div>
+
+        <span id="generateWorkoutButton" onclick="generateWorkout();">
+            Generate Workout
+        </span>
+
+        <div id="divWorkoutResult">
+            AAAAAAAAAAAAAAAAA
+            <br>
+            <br>
+            AAAAAAAAAAAAAAAAA
+            <br>
+            <br>
+            AAAAAAAAAAAAAAAAA
+            <br>
+            <br>
+            AAAAAAAAAAAAAAAAA
+            <br>
+            <br>
+            AAAAAAAAAAAAAAAAA
+            <br>
+            <br>
+            AAAAAAAAAAAAAAAAA
+            <br>
+            <br>
+            AAAAAAAAAAAAAAAAA
+            <br>
+            <br>
+            AAAAAAAAAAAAAAAAA
+            <br>
+        </div>
+    </div>
+</body>
+</html>
