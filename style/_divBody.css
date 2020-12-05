@@ -1,0 +1,100 @@
+
+#divWorkoutContainer{
+    background-color: #222831;
+    position: relative;
+    top: 40vh;
+    width: 90vw;
+    height: 21vh;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#divWorkoutSelector{
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    width: 86vw;
+}
+
+#divWorkoutContainer select {
+    width: 86vw;
+    background-color: #222831;
+    color: #ffd369;
+    text-align-last:center;
+    border: 1px solid #ffd369;
+    border-radius: 5px;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+}
+
+#generateWorkoutButton{
+    position: absolute;
+    align-items: center;
+    width: 85vw;
+    margin: 0 0 1vh 0;
+    padding: 0;
+    top: 10vh;
+    left: 1vh;
+    padding: 1vh 28vw;
+
+    cursor: pointer;
+
+    color: #ccc;
+    border: 2px solid #ccc;
+    font-size: 3vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#generateWorkoutButton:hover{
+    position: absolute;
+    align-items: center;
+    margin: 0 0 1vh 0;
+    padding: 0;
+    top: 10vh;
+    left: 1vh;
+    padding: 1vh 28vw;
+
+    cursor: pointer;
+
+    color: #ffd369;
+    border: 3px solid #ffd369;
+    font-size: 3vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+#generateWorkoutButton:active{
+    position: absolute;
+    align-items: center;
+    margin: 0 0 1vh 0;
+    padding: 0;
+    top: 10vh;
+    left: 1vh;
+    padding: 1vh 28vw;
+
+    cursor: pointer;
+
+    background-color: #ffd369;
+    color: #222831;
+    border: 3px solid #ccc;
+    font-size: 3vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+#divWorkoutResult{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 13vh;
+    left: 3vh;
+    margin: auto;
+    align-items: center;
+}
