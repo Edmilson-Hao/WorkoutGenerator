@@ -25,48 +25,43 @@
 
     <div id="divWorkoutContainer">
         <div id="divWorkoutSelector">
-            <select id="workoutSplitSelector" name="workoutSplitSelector">
-                <option value="01">Full Body Split</option>
-                <option value="upperLowerSplit">Upper Lower Split</option>
-                <option value="pushPullLegsSplit">Push Pull Legs Split</option>
-            </select>
-            <!--
-            <select id="workoutDaySelector" name="workoutDaySelect">
-                <option value="fullBodyCompoundDay">Full Body Compound Day</option>
-                <option value="fullBodyAccessoryDay">Full Body Accessory Day</option>
-            </select>
-            -->
+            <div id="divWorkoutSelector">
+                <select id="workoutSplitSelector" name="workoutSplitSelector">
+                    <option value="">Select One</option>
+                    <option value="fullBodySplit">Full Body Split</option>
+                    <option value="upperLowerSplit">Upper Lower Split</option>
+                    <option value="pushPullLegsSplit">Push Pull Legs Split</option>
+                </select>
+
+                <select className='secondarySelector' id="fullBodySplitDay" name="fullBodySplitDay">
+                    <option value="">Select One</option>
+                    <option value="fullBodyMainGroupDay">Main Group Day</option>
+                    <option value="fullBodySecondaryGroupDay">Secondary Group Day</option>
+                </select>
+
+                <select className='secondarySelector' id="upperLowerSplitDay" name="upperLowerSplitDary">
+                </select>
+
+                <select className='secondarySelector' id="pushPullLegsSplitDay" name="pushPullLegsSplitDay">
+                </select>
+        </div>
+
         </div>
 
         <span id="generateWorkoutButton" onclick="generateWorkout();">
             Generate Workout
         </span>
 
+
         <div id="divWorkoutResult">
-            AAAAAAAAAAAAAAAAA
-            <br>
-            <br>
-            AAAAAAAAAAAAAAAAA
-            <br>
-            <br>
-            AAAAAAAAAAAAAAAAA
-            <br>
-            <br>
-            AAAAAAAAAAAAAAAAA
-            <br>
-            <br>
-            AAAAAAAAAAAAAAAAA
-            <br>
-            <br>
-            AAAAAAAAAAAAAAAAA
-            <br>
-            <br>
-            AAAAAAAAAAAAAAAAA
-            <br>
-            <br>
-            AAAAAAAAAAAAAAAAA
-            <br>
+
         </div>
+
+        <div id="generatedWorkout">
+                    
+        </div>
+
+
     </div>
 </body>
 </html>
