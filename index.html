@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>💪Workout Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- JS files
+    --------------------------------------------------------------------------------------------------->
+    <script src="index.js"></script>
+    <script src='./rsc/fullBody.js'></script>
+    <!-- CSS Files
+    --------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Importing Google Font
+    --------------------------------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Workout Generator</h1>
+    </header>
+
+    <div id="divWorkoutContainer">
+        <div id="divWorkoutSelector">
+            <div id="divWorkoutSelector">
+                <select id="workoutSplitSelector" name="workoutSplitSelector">
+                    <option value="">Select One</option>
+                    <option value="fullBodySplit">Full Body Split</option>
+                    <option value="upperLowerSplit">Upper Lower Split</option>
+                    <option value="pushPullLegsSplit">Push Pull Legs Split</option>
+                </select>
+
+                <select className='secondarySelector' id="fullBodySplitDay" name="fullBodySplitDay">
+                    <option value="">Select One</option>
+                    <option value="fullBodyMainGroupDay">Main Group Day</option>
+                    <option value="fullBodySecondaryGroupDay">Secondary Group Day</option>
+                </select>
+
+                <select className='secondarySelector' id="upperLowerSplitDay" name="upperLowerSplitDary">
+                </select>
+
+                <select className='secondarySelector' id="pushPullLegsSplitDay" name="pushPullLegsSplitDay">
+                </select>
+        </div>
+
+        </div>
+
+        <span id="generateWorkoutButton" onclick="generateWorkout();">
+            Generate Workout
+        </span>
+
+
+        <div id="divWorkoutResult">
+
+        </div>
+
+        <div id="generatedWorkout">
+                    
+        </div>
+
+
+    </div>
+</body>
+</html>
