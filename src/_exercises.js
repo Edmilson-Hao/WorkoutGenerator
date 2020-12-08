@@ -1,59 +1,9 @@
-var chest = [
-    {
-        "ID": 1,
-        "name": "Push Up."
-    },
-    {
-        "ID": 2,
-        "name": "Declined Push Up."
-    },
-    {
-        "ID": 3,
-        "name": "Cable Flye."
-    },
-    {
-        "ID": 4,
-        "name": "Dips."
-    }
-]
+var mainGroup = [
+    ["Push Up.", "Declined Push Up.", "Cable Flye.", "Dips."],
+    ["Pull Up.", "Reverse Row.", "Single Arm Row.", "Bent Over Row."],
+    ["Single Leg Squat.", "Squat.", "Leg Extension.", "Leg Curl."]
+];
 
-var back = [
-    {
-        "ID": 1,
-        "name": "Pull Up."
-    },
-    {
-        "ID": 2,
-        "name": "Reverse Row."
-    },
-    {
-        "ID": 3,
-        "name": "Single Arm Row."
-    },
-    {
-        "ID": 4,
-        "name": "Bent Over Row."
-    }
-]
-
-var legs = [
-    {
-        "ID": 1,
-        "name": "Single Leg Squat."
-    },
-    {
-        "ID": 2,
-        "name": "Squat."
-    },
-    {
-        "ID": 3,
-        "name": "Leg Extension."
-    },
-    {
-        "ID": 4,
-        "name": "Leg Curl."
-    }
-]
 
 var shoulder = [
     {
