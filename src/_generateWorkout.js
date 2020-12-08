@@ -1,0 +1,3 @@
+generateFullBodyMainGroupDay = () => {
+    console.log("HI!");
+}

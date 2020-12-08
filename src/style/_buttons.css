@@ -1,0 +1,57 @@
+#generateWorkoutButton{
+    position: absolute;
+    align-items: center;
+    top: 10vh;
+    margin: 1vh 5% 1vh 5%;
+    padding: 1vh 30% 1vh;
+    width: 90%;
+
+    cursor: pointer;
+
+    color: #ccc;
+    border: 2px solid #ccc;
+    font-size: 3vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#generateWorkoutButton:hover{
+    position: absolute;
+    align-items: center;
+    top: 10vh;
+    width: 90%;
+    margin: 1vh 5% 1vh 5%;
+    padding: 1vh 30% 1vh;
+    box-shadow: 5px 10px;
+
+    cursor: pointer;
+
+    color: #ffd369;
+    border: 3px solid #ffd369;
+    font-size: 3vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+#generateWorkoutButton:active{
+    position: absolute;
+    align-items: center;
+    top: 10vh;
+    margin: 1vh 5% 1vh 5%;
+    padding: 1vh 30% 1vh;
+    width: 90%;
+
+    cursor: pointer;
+
+    background-color: #ffd369;
+    color: #222831;
+    border: 3px solid #ccc;
+    font-size: 3vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border-radius: 5px;
+}

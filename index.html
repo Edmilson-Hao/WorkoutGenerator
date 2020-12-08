@@ -9,6 +9,9 @@
     --------------------------------------------------------------------------------------------------->
     <script src="index.js"></script>
     <script src='./rsc/fullBody.js'></script>
+    <script src='./exercises/_exercises.js'></script>
+    <script src='./exercises/_generateWorkout.js'></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- CSS Files
     --------------------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="index.css">
@@ -24,8 +27,7 @@
     </header>
 
     <div id="divWorkoutContainer">
-        <div id="divWorkoutSelector">
-            <div id="divWorkoutSelector">
+            <div id="divWorkoutSelector" onchange="workoutDayPopulate();">
                 <select id="workoutSplitSelector" name="workoutSplitSelector">
                     <option value="">Select One</option>
                     <option value="fullBodySplit">Full Body Split</option>
@@ -33,29 +35,29 @@
                     <option value="pushPullLegsSplit">Push Pull Legs Split</option>
                 </select>
 
-                <select class='secondarySelector' id="fullBodySplitDay" name="fullBodySplitDay">
+                <select class='workoutDaySelector' id='fullBodySplit' name='fullBodySplit'>
                     <option value="">Select One</option>
                     <option value="fullBodyMainGroupDay">Main Group Day</option>
                     <option value="fullBodySecondaryGroupDay">Secondary Group Day</option>
                 </select>
 
-                <select class='secondarySelector' id="upperLowerSplitDay" name="upperLowerSplitDary">
+                <select class='workoutDaySelector' id='upperLowerSplit' name='upperLowerSplit'>
+                    <option value="">Select One</option>
+                    <option value="upperBodyMainGroupDay">Upper Body Day</option>
+                    <option value="lowerBodySecondaryGroupDay">Lower Body Day</option>
                 </select>
 
-                <select class='secondarySelector' id="pushPullLegsSplitDay" name="pushPullLegsSplitDay">
+                <select class='workoutDaySelector' id='pushPullLegsSplit' name='pushPullLegsSplit'>
+                    <option value="">Select One</option>
+                    <option value="pushDay">Push Day</option>
+                    <option value="pullDay">Pull Day</option>
+                    <option value="legsDay">Legs Day</option>
                 </select>
-        </div>
-
         </div>
 
         <span id="generateWorkoutButton" onclick="generateWorkout();">
-            Generate Workout
+            Generate <br> Workout
         </span>
-
-
-        <div id="divWorkoutResult">
-
-        </div>
 
         <div id="generatedWorkout">
                     
