@@ -1,0 +1,12 @@
+.tableResult{
+    width: 100%;
+    border: 1px solid white;
+}
+
+.tableResult tr td{
+    border-left: 1px solid #ccc;
+}
+
+.tableResult tr td:first-child{
+    border: none;
+}
