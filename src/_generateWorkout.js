@@ -14,6 +14,7 @@ generateFullBodyMainGroupDay = () => {
     
     document.getElementById('generatedWorkout').style.display = 'block';
     document.getElementById('divWorkoutContainer').style.display = 'none';
+    document.getElementById('footer').style.display = 'block';
 
     document.getElementById('generatedWorkout').innerHTML = `
         <table class='tableResult'>
