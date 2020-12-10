@@ -3,7 +3,7 @@
     align-items: center;
     top: 10vh;
     margin: 1vh 5% 1vh 5%;
-    padding: 1vh 30% 1vh;
+    text-align: center;
     width: 90%;
 
     cursor: pointer;
@@ -22,7 +22,7 @@
     top: 10vh;
     width: 90%;
     margin: 1vh 5% 1vh 5%;
-    padding: 1vh 30% 1vh;
+    text-align: center;
     box-shadow: 5px 10px;
 
     cursor: pointer;
@@ -41,7 +41,7 @@
     align-items: center;
     top: 10vh;
     margin: 1vh 5% 1vh 5%;
-    padding: 1vh 30% 1vh;
+    text-align: center;
     width: 90%;
 
     cursor: pointer;
@@ -63,11 +63,58 @@ footer{
     position: absolute;
     background-color: #222831;
     bottom: 0;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
 
+
+footer a {
+    color: #ffd369;
+    position: absolute;
+    width: 50%;
+    height: 12vh;
+    text-align: center;
+    font-size: 3vh;
+    overflow: auto;
+    line-height: 12vh;
+}
+
+footer a:not(:first-child){
+    margin-left: 50%;
+    border-left: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 footer a{
     color: #ffd369;
     padding: 4vh 17%;
@@ -91,6 +138,7 @@ footer a:hover{
     height: 100%;
     font-size: 3vh;
     border: 1px solid #ffd369;
+    text-align: center;
 }
 
 footer a:active{
@@ -104,6 +152,7 @@ footer a:active{
     height: 100%;
     font-size: 3vh;
     border: 1px solid #222831;
+    text-align: center;
 }
 
 footer a:not(:first-child){
@@ -111,4 +160,5 @@ footer a:not(:first-child){
     padding: 4vh 13vw;
     bottom: -.8vh;
     border-left: 1px solid #ccc;
+    text-align: center;
 }
