@@ -45,7 +45,7 @@ generateWorkout = () => {
                 } else if(fullBodySplit === 'fullBodyMainGroupDay'){
                     generateFullBodyMainGroupDay();
                 } else if (fullBodySplit === 'fullBodySecondaryGroupDay'){
-                    swal('fullBodySecondaryGroupDay');
+                    generateFullBodySecondaryGroupDay();
                 }
             break;
 

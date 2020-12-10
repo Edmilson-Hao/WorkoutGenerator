@@ -69,11 +69,10 @@ footer{
 }
 
 footer a{
-    color: red;
+    color: #ffd369;
     padding: 4vh 17%;
     background: transparent;
     text-decoration: none;
-    border: 1px solid red;
     position: relative;
     bottom: -4.3vh;
     width: 50%;
@@ -81,8 +80,35 @@ footer a{
     font-size: 3vh;
 }
 
+footer a:hover{
+    color: #ccc;
+    padding: 4vh 17%;
+    background: transparent;
+    text-decoration: none;
+    position: relative;
+    bottom: -4.3vh;
+    width: 50%;
+    height: 100%;
+    font-size: 3vh;
+    border: 1px solid #ffd369;
+}
+
+footer a:active{
+    color: #ccc;
+    padding: 4vh 17%;
+    background: #ccc;
+    text-decoration: none;
+    position: relative;
+    bottom: -4.3vh;
+    width: 50%;
+    height: 100%;
+    font-size: 3vh;
+    border: 1px solid #222831;
+}
+
 footer a:not(:first-child){
     margin-left: 50%;
     padding: 4vh 13vw;
     bottom: -.8vh;
+    border-left: 1px solid #ccc;
 }
