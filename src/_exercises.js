@@ -1,3 +1,21 @@
+var exerciseArray = [];
+
+var max;
+
+var firstGroup;
+var secondGroup;
+var thirdGroup;
+
+var firstGroupFirstExercise;
+var firstGroupSecondExercise;
+
+var secondGroupFirstExercise;
+var secondGroupSecondExercise;
+
+var thirdGroupFirstExercise;
+var thirdGroupSecondExercise;
+
+
 var mainGroup = [
     ["Push Up.", "Declined Push Up.", "Cable Flye.", "Dips."],
     ["Pull Up.", "Reverse Row.", "Single Arm Row.", "Bent Over Row."],
