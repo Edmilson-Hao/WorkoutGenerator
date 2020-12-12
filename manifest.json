@@ -1,0 +1,13 @@
+{
+    "name": "Your Great Site",
+    "short_name": "Workout Generator",
+    "description": "Generate Random Workout As You Need.",
+    "start_url": "./index.html",
+    "background_color": "#ccc",
+    "theme_color": "#222831",
+    "icons": [{
+      "src": "./assets/appLogo.jpg",
+      "sizes": "256x256",
+      "type": "image/png"
+    }]
+  }
