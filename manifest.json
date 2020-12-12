@@ -1,13 +1,45 @@
 {
-    "name": "Your Great Site",
+    "name": "Workout Generator",
     "short_name": "Workout Generator",
     "description": "Generate Random Workout As You Need.",
     "start_url": "./index.html",
-    "background_color": "#ccc",
+    "background_color": "#cccccc",
     "theme_color": "#222831",
-    "icons": [{
-      "src": "./assets/appLogo.jpg",
-      "sizes": "256x256",
-      "type": "image/png"
-    }]
-  }
+    "icons": [
+        {
+            "src": "https://wktgen-oqx6cxnoq.vercel.app/assets/appLogo.jpg",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://wktgen-oqx6cxnoq.vercel.app/",
+    "lang": "",
+    "categories": ["Workout", "Generator", "Help", "Tools"],
+    "shortcuts": [
+        {
+          "name": "Workout Generator",
+          "short_name": "Workout Generator",
+          "description": "View the list of podcasts you saved for later",
+          "url": "/play-later?utm_source=homescreen",
+          "icons": [
+            {
+                "src": "https://wktgen-oqx6cxnoq.vercel.app/assets/appLogo.jpg",
+                "sizes": "256x256",
+                "type": "image/png"
+            }
+          ]
+        }
+      ],
+    "screenshots": [
+        {
+            "src": "[Embedded]",
+            "sizes": "1280x800",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "750x1334",
+            "type": "image/png"
+        }
+    ]
+}
