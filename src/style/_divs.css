@@ -1,0 +1,21 @@
+#divWorkoutContainer{
+    background-color: #222831;
+    position: absolute;
+    top: 30vh;
+    left:5vw;
+    width: 90vw;
+    height: 21vh;
+    margin: 1vh auto;
+    border-radius: 10px;
+}
+
+#generatedWorkout{
+    background-color: #222831;
+    position: relative;
+    top: 30vh;
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    display: none;
+    padding: 1vh;
+}

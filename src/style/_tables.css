@@ -1,0 +1,18 @@
+.tableResult{
+    width: 100%;
+    border: 1px solid white;
+    color:#ccc;
+}
+
+.tableResult tr th:not(:first-child){
+    border-left: 1px solid #ccc;
+}
+
+.tableResult tr td:not(:first-child){
+    padding-left: 9vw;
+}
+
+.tdContent{
+    border-top: 1px solid #ccc;
+    height: 5vh;
+}
