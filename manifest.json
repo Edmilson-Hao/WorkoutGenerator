@@ -12,34 +12,40 @@
             "type": "image/png"
         }
     ],
-    "url": "https://wktgen-oqx6cxnoq.vercel.app/",
+    "url": "https://wktgen-4l3oen4dg.vercel.app/",
     "lang": "",
-    "categories": ["Workout", "Generator", "Help", "Tools"],
+    "categories": [
+        "Workout",
+        "Generator",
+        "Help",
+        "Tools"
+    ],
     "shortcuts": [
         {
-          "name": "Workout Generator",
-          "short_name": "Workout Generator",
-          "description": "View the list of podcasts you saved for later",
-          "url": "/play-later?utm_source=homescreen",
-          "icons": [
-            {
-                "src": "https://wktgen-oqx6cxnoq.vercel.app/assets/appLogo.jpg",
-                "sizes": "256x256",
-                "type": "image/png"
-            }
-          ]
+            "name": "Workout Generator",
+            "short_name": "Workout Generator",
+            "description": "View the list of podcasts you saved for later",
+            "url": "/play-later?utm_source=homescreen",
+            "icons": [
+                {
+                    "src": "https://wktgen-oqx6cxnoq.vercel.app/assets/appLogo.jpg",
+                    "sizes": "256x256",
+                    "type": "image/png"
+                }
+            ]
         }
-      ],
+    ],
     "screenshots": [
         {
-            "src": "[Embedded]",
+            "src": "https://wktgen-4l3oen4dg.vercel.app/[Embedded]",
             "sizes": "1280x800",
             "type": "image/png"
         },
         {
-            "src": "[Embedded]",
+            "src": "https://wktgen-4l3oen4dg.vercel.app/[Embedded]",
             "sizes": "750x1334",
             "type": "image/png"
         }
-    ]
+    ],
+    "display": "standalone"
 }
