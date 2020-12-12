@@ -31,14 +31,14 @@ generateFullBodyWorkout = () => {
     document.getElementById('divWorkoutContainer').style.display = 'none';
     document.getElementById('footer').style.display = 'block';
 
-    printWorkout();
+    printFullBodyWorkout();
 }
 
 randomNumber = (min, max) => {
    return parseInt(min + (max - min) * Math.random());
 }
 
-printWorkout = () => {
+printFullBodyWorkout = () => {
    document.getElementById('generatedWorkout').innerHTML = `
         <table class='tableResult'>
          <tr>
@@ -54,37 +54,37 @@ printWorkout = () => {
          </tr>
 
          <tr>
-            <td class='tdContent'>` + exerciseArray[firstGroup][firstGroupFirstExercise] + `</td>
+            <td class='tdContent'> ${ exerciseArray[firstGroup][firstGroupFirstExercise] }</td>
             <td class='tdContent'>4</td>
             <td class='tdContent'>12</td>
          </tr>
 
          <tr>
-            <td class='tdContent'>` + exerciseArray[firstGroup][firstGroupSecondExercise] + `</td>
+            <td class='tdContent'> ${ exerciseArray[firstGroup][firstGroupSecondExercise] }</td>
             <td class='tdContent'>2</td>
             <td class='tdContent'>12</td>
          </tr>
 
          <tr>
-            <td class='tdContent'>` + exerciseArray[secondGroup][secondGroupFirstExercise] + `</td>
+            <td class='tdContent'> ${ exerciseArray[secondGroup][secondGroupFirstExercise] }</td>
             <td class='tdContent'>4</td>
             <td class='tdContent'>12</td>
          </tr>
 
          <tr>
-            <td class='tdContent'>` + exerciseArray[secondGroup][secondGroupSecondExercise] + `</td>
+            <td class='tdContent'> ${ exerciseArray[secondGroup][secondGroupSecondExercise] }</td>
             <td class='tdContent'>2</td>
             <td class='tdContent'>12</td>
          </tr>
 
          <tr>
-            <td class='tdContent'>` + exerciseArray[thirdGroup][thirdGroupFirstExercise] + `</td>
+            <td class='tdContent'> ${ exerciseArray[thirdGroup][thirdGroupFirstExercise] }</td>
             <td class='tdContent'>4</td>
             <td class='tdContent'>12</td>
          </tr>
 
          <tr>
-            <td class='tdContent'>` + exerciseArray[thirdGroup][thirdGroupSecondExercise] + `</td>
+            <td class='tdContent'> ${ exerciseArray[thirdGroup][thirdGroupSecondExercise] }</td>
             <td class='tdContent'>2</td>
             <td class='tdContent'>12</td>
          </tr>

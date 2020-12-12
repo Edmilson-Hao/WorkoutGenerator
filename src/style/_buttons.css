@@ -77,6 +77,36 @@ footer a {
     font-size: 3vh;
     overflow: auto;
     line-height: 12vh;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffd369;
+    position: absolute;
+    width: 50%;
+    height: 12vh;
+    text-align: center;
+    font-size: 3vh;
+    overflow: auto;
+    line-height: 12vh;
+    text-decoration: none;
+    box-shadow: 10px;
+    border-top: 1vh solid #ccc;
+    overflow: hidden; 
+}
+
+footer a:active {
+    color: #222831;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 50%;
+    height: 12vh;
+    text-align: center;
+    font-size: 3vh;
+    overflow: auto;
+    line-height: 12vh;
+    text-decoration: none;
 }
 
 footer a:not(:first-child){
