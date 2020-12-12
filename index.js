@@ -29,11 +29,11 @@ workoutDayPopulate = () => {
 }
 
 generateWorkout = () => {
-    var workoutSplitSelector = document.getElementById('workoutSplitSelector').value;
+    workoutSplitSelector = document.getElementById('workoutSplitSelector').value;
 
-    var fullBodySplit = document.getElementById('fullBodySplit').value;
-    var upperLowerSplit = document.getElementById('upperLowerSplit').value;
-    var pushPullLegsSplit = document.getElementById('pushPullLegsSplit').value;
+    fullBodySplit = document.getElementById('fullBodySplit').value;
+    upperLowerSplit = document.getElementById('upperLowerSplit').value;
+    pushPullLegsSplit = document.getElementById('pushPullLegsSplit').value;
     
     if( workoutSplitSelector === ''){
         swal("Select a Split option!");
@@ -55,9 +55,9 @@ generateWorkout = () => {
                 if(upperLowerSplit === ''){
                     swal("Select a Split option!");
                 } else if(upperLowerSplit === 'upperBodyMainGroupDay'){
-                    swal('upperBodyMainGroupDay!');
+                    generateUpperLowerWorkout();
                 } else if (upperLowerSplit === 'lowerBodySecondaryGroupDay'){
-                    swal('lowerBodySecondaryGroupDay');
+                    generateUpperLowerWorkout();
                 }
             break;
 

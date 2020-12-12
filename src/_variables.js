@@ -15,6 +15,17 @@ var secondGroupSecondExercise;
 var thirdGroupFirstExercise;
 var thirdGroupSecondExercise;
 
+var firstExercise;
+var secondExercise;
+var thirdExercise;
+var fourthExercise;
+var fifthExercise;
+var sixthExercise;
+
+var workoutSplitSelector;
+var fullBodySplit;
+var upperLowerSplit;
+var pushPullLegsSplit;
 
 var mainGroup = [
     ["Push Up.", "Declined Push Up.", "Cable Flye.", "Dips."],
