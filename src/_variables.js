@@ -27,6 +27,9 @@ var fullBodySplit;
 var upperLowerSplit;
 var pushPullLegsSplit;
 
+var sets;
+var reps;
+
 var mainGroup = [
     ["Push Up.", "Declined Push Up.", "Cable Flye.", "Dips."],
     ["Pull Up.", "Reverse Row.", "Single Arm Row.", "Bent Over Row."],

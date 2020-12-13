@@ -23,10 +23,6 @@ generateFullBodyWorkout = () => {
       fifthExercise = exerciseArray[thirdGroup][randomNumber(0, max)];
       sixthExercise = exerciseArray[thirdGroup][randomNumber(0, max)];
    } while (firstExercise === secondExercise || thirdExercise === fourthExercise|| fifthExercise === sixthExercise);
-    
-    document.getElementById('generatedWorkout').style.display = 'block';
-    document.getElementById('divWorkoutContainer').style.display = 'none';
-    document.getElementById('footer').style.display = 'block';
 
     printWorkout();
 }
@@ -59,16 +55,55 @@ generateUpperLowerWorkout = () => {
       } while (firstExercise === secondExercise);
 
    }
-      
 
-   document.getElementById('generatedWorkout').style.display = 'block';
-   document.getElementById('divWorkoutContainer').style.display = 'none';
-   document.getElementById('footer').style.display = 'block';
+   printWorkout();
+}
+
+generatePushPullLegsWorkout = () => {
+   if(pushPullLegsSplit === 'pushDay'){
+      do {
+         firstExercise = mainGroup[0][randomNumber(0, 4)];
+         secondExercise = mainGroup[0][randomNumber(0, 4)];
+         thirdExercise = mainGroup[0][randomNumber(0, 4)];
+   
+         fifthExercise = secondaryGroup[1][randomNumber(0, 3)];
+         sixthExercise = secondaryGroup[1][randomNumber(0, 3)];
+      } while ( firstExercise === secondExercise || firstExercise === thirdExercise || secondExercise === thirdExercise || fifthExercise === sixthExercise);
+   
+      fourthExercise = secondaryGroup[0][1];
+   } else if (pushPullLegsSplit === 'pullDay'){
+      do {
+         firstExercise = mainGroup[1][randomNumber(0, 4)];
+         secondExercise = mainGroup[1][randomNumber(0, 4)];
+         thirdExercise = mainGroup[1][randomNumber(0, 4)];
+   
+         fifthExercise = secondaryGroup[2][randomNumber(0, 3)];
+         sixthExercise = secondaryGroup[2][randomNumber(0, 3)];
+      } while ( firstExercise === secondExercise || firstExercise === thirdExercise || secondExercise === thirdExercise || fifthExercise === sixthExercise);
+   
+      fourthExercise = secondaryGroup[0][2];
+   } else if (pushPullLegsSplit === 'legsDay'){
+      do {
+         firstExercise = mainGroup[2][randomNumber(0, 3)];
+         secondExercise = mainGroup[2][randomNumber(0, 3)];
+         thirdExercise = mainGroup[2][randomNumber(0, 3)];
+   
+         
+      } while ( firstExercise === secondExercise || firstExercise === thirdExercise || secondExercise === thirdExercise);
+      
+      fifthExercise = 'Stiff Leg DeadLift.';
+      sixthExercise = 'Leg Curl.';
+   }
 
    printWorkout();
 }
 
 printWorkout = () => {
+   document.getElementById('generatedWorkout').style.display = 'block';
+   document.getElementById('divWorkoutContainer').style.display = 'none';
+   document.getElementById('footer').style.display = 'block';
+
+
    document.getElementById('generatedWorkout').innerHTML = `
         <table class='tableResult'>
          <tr>
@@ -85,38 +120,38 @@ printWorkout = () => {
 
          <tr>
             <td class='tdContent'> ${ firstExercise }</td>
-            <td class='tdContent'>4</td>
-            <td class='tdContent'>12</td>
+            <td class='tdContent'> ${ randomNumber(3, 5) } </td>
+            <td class='tdContent'> ${ randomNumber(10, 15) } </td>
          </tr>
 
          <tr>
             <td class='tdContent'> ${ secondExercise }</td>
-            <td class='tdContent'>2</td>
-            <td class='tdContent'>12</td>
+            <td class='tdContent'> ${ randomNumber(3, 5) } </td>
+            <td class='tdContent'> ${ randomNumber(10, 15) } </td>
          </tr>
 
          <tr>
             <td class='tdContent'> ${ thirdExercise }</td>
-            <td class='tdContent'>4</td>
-            <td class='tdContent'>12</td>
+            <td class='tdContent'> ${ randomNumber(3, 5) } </td>
+            <td class='tdContent'> ${ randomNumber(10, 15) } </td>
          </tr>
 
          <tr>
             <td class='tdContent'> ${ fourthExercise }</td>
-            <td class='tdContent'>2</td>
-            <td class='tdContent'>12</td>
+            <td class='tdContent'> ${ randomNumber(3, 5) } </td>
+            <td class='tdContent'> ${ randomNumber(10, 15) } </td>
          </tr>
 
          <tr>
             <td class='tdContent'> ${ fifthExercise }</td>
-            <td class='tdContent'>4</td>
-            <td class='tdContent'>12</td>
+            <td class='tdContent'> ${ randomNumber(3, 5) } </td>
+            <td class='tdContent'> ${ randomNumber(10, 15) } </td>
          </tr>
 
          <tr>
             <td class='tdContent'> ${ sixthExercise }</td>
-            <td class='tdContent'>2</td>
-            <td class='tdContent'>12</td>
+            <td class='tdContent'> ${ randomNumber(3, 5) } </td>
+            <td class='tdContent'> ${ randomNumber(10, 15) } </td>
          </tr>
         </table>
     `;

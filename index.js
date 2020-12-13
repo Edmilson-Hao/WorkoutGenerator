@@ -65,11 +65,11 @@ generateWorkout = () => {
                 if(pushPullLegsSplit === ''){
                     swal('Select a Split option!');
                 } else if(pushPullLegsSplit === 'pushDay'){
-                    swal('pushDay!');
+                    generatePushPullLegsWorkout();
                 } else if (pushPullLegsSplit === 'pullDay'){
-                    swal('pullDay');
+                    generatePushPullLegsWorkout();
                 } else if (pushPullLegsSplit === 'legsDay'){
-                    swal('legsDay');
+                    generatePushPullLegsWorkout();
                 }
             break;
         }
