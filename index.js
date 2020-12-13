@@ -35,6 +35,7 @@ generateWorkout = () => {
     upperLowerSplit = document.getElementById('upperLowerSplit').value;
     pushPullLegsSplit = document.getElementById('pushPullLegsSplit').value;
     
+
     if( workoutSplitSelector === ''){
         swal("Select a Split option!");
     } else {
