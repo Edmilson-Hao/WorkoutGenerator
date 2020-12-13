@@ -1,3 +1,21 @@
+window.addEventListener('load', e => {
+    if('serviceWorker' in navigator){
+        try{
+            navigator.serviceWorker.register('sw.js');
+            console.log('ServiceWorker registrado.');
+        } catch (error){
+            console.log('ServideWorker falhou.');
+        }
+    }
+});
+
+
+
+
+
+
+
+
 workoutDayPopulate = () => {
     let splitSelected = document.getElementById('workoutSplitSelector').value;
 
