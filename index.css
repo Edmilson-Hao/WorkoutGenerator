@@ -21,3 +21,7 @@
   body {
     -ms-overflow-style:none;
   }
+
+  author {
+    float: right;
+  }
