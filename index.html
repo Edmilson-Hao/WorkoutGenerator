@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>💪Workout Generator</title>
@@ -166,5 +166,28 @@ The team recruited 68 women and 32 men ages 55 through 86, all of whom had mild 
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBQ6nojUPu8B97p7AEUWZdapkvzgW3eKig",
+        authDomain: "workout-generator-6342e.firebaseapp.com",
+        projectId: "workout-generator-6342e",
+        storageBucket: "workout-generator-6342e.appspot.com",
+        messagingSenderId: "761346921364",
+        appId: "1:761346921364:web:b0b1fe82b0fd3d450af581",
+        measurementId: "G-LQCMBYMDCW"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
 </body>
 </html>
